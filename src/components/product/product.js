@@ -30,7 +30,7 @@ const Expert = (props) => {
             {/* button for add to cart */}
             <div>
                 <button
-                    onClick={() => props.handleHire(props.expert)}
+                    onClick={() => props.handleCart(props.expert)}
                     className="card-btn"
                 >
                     <FontAwesomeIcon className="cart_icon" icon={faShoppingCart} /> Add To Cart
