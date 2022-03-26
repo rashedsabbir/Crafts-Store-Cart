@@ -1,12 +1,12 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-import "./product.css";
+import "./Product.css";
 
 const Expert = (props) => {
     // destructuring
-    const { name, image, price, catagory, size, delivery } = props.expert || {};
-
+    const { name, image, price, catagory, size, delivery } = props.product || {};
+    console.log(props)
     // adding jsx
     return (
 
@@ -30,7 +30,7 @@ const Expert = (props) => {
             {/* button for add to cart */}
             <div>
                 <button
-                    onClick={() => props.handleCart(props.expert)}
+                    onClick={() => props.handleCart(props.product)}
                     className="card-btn"
                 >
                     <FontAwesomeIcon className="cart_icon" icon={faShoppingCart} /> Add To Cart

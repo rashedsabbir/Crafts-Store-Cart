@@ -1,13 +1,13 @@
 // import files
 import React, { useEffect, useState } from "react";
-import Product from "../Expert/Expert";
+import Product from "../Product/Product";
 
-import Cart from "../Hire/Hire";
+import Cart from "../Cart/Cart";
 import "./Main.css";
 
 
 const Main = () => {
-    // use state for expart
+    // use state for product
     const [products, setProducts] = useState([]);
 
     // use state for cart
