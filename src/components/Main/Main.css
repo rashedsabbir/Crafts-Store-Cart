@@ -1,0 +1,26 @@
+/* style for main section */
+.container {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 20px;
+}
+
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    grid-gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+@media only screen and (max-width: 768px)  {
+    .product-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.cart-container {
+    margin-top: 30px;
+}
